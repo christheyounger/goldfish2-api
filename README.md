@@ -1,62 +1,72 @@
-Welcome to the AWS CodeStar sample web service
-==============================================
+Symfony Standard Edition
+========================
 
-This sample code helps get you started with a simple PHP Slim web
-service deployed by AWS Elastic Beanstalk.
+Welcome to the Symfony Standard Edition - a fully-functional Symfony
+application that you can use as the skeleton for your new applications.
 
-What's Here
------------
+For details on how to download and get started with Symfony, see the
+[Installation][1] chapter of the Symfony Documentation.
 
-This sample includes:
+What's inside?
+--------------
 
-* README.md - this file
-* .ebextensions/ - this directory contains the PHP configuration file that
-  allows AWS Elastic Beanstalk to deploy your PHP application
-* index.php - this file contains the sample service
-* scripts/ - this directory contains scripts used by AWS CodeDeploy when
-  installing and deploying your service on the Amazon EC2 instance
+The Symfony Standard Edition is configured with the following defaults:
 
+  * An AppBundle you can use to start coding;
 
-Getting Started
----------------
+  * Twig as the only configured template engine;
 
-These directions assume you want to develop on your local computer, and not
-from the Amazon EC2 instance itself. If you're on the Amazon EC2 instance, the
-virtual environment is already set up for you, and you can start working on the
-code.
+  * Doctrine ORM/DBAL;
 
-To work on the sample code, you'll need to clone your project's repository to your
-local computer. If you haven't, do that first. You can find instructions in the
-AWS CodeStar user guide.
+  * Swiftmailer;
 
-1. Install PHP.  See http://php.net/manual/en/install.php for details.
+  * Annotations enabled for everything.
 
-2. Install composer.  See https://getcomposer.org/doc/00-intro.md for
-   details.
+It comes pre-configured with the following bundles:
 
-3. Install your dependencies:
+  * **FrameworkBundle** - The core Symfony framework bundle
 
-        $ php composer.phar require slim/slim "^3.0"
+  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
+    template and routing annotation capability
 
-4. Start the PHP development server:
+  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
 
-        $ php -S localhost:8888 -t public index.php
+  * [**TwigBundle**][8] - Adds support for the Twig templating engine
 
-5. Open http://127.0.0.1:8888/ in a web browser to view your service.
+  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
+    component
 
-What Do I Do Next?
-------------------
+  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
+    sending emails
 
-Once you have a virtual environment running, you can start making changes to
-the sample PHP web service. We suggest making a small change to index.php
-first, so you can see how changes pushed to your project's repository are
-automatically picked up by your project pipeline and deployed to the Amazon EC2
-instance by AWS Beanstalk. (You can watch the pipeline progress on your project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
+  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
 
-Learn more about AWS CodeStar by reading the [user guide][User Guide].  Ask
-questions or make suggestions on our [forum][Forum].
+  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
+    the web debug toolbar
 
-[User Guide]: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
+  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
+    configuring and working with Symfony distributions
 
-[Forum]: https://forums.aws.amazon.com/forum.jspa?forumID=248
+  * [**SensioGeneratorBundle**][13] (in dev env) - Adds code generation
+    capabilities
+
+  * [**WebServerBundle**][14] (in dev env) - Adds commands for running applications
+    using the PHP built-in web server
+
+  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
+    integration
+
+All libraries and bundles included in the Symfony Standard Edition are
+released under the MIT or BSD license.
+
+Enjoy!
+
+[1]:  https://symfony.com/doc/3.3/setup.html
+[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
+[7]:  https://symfony.com/doc/3.3/doctrine.html
+[8]:  https://symfony.com/doc/3.3/templating.html
+[9]:  https://symfony.com/doc/3.3/security.html
+[10]: https://symfony.com/doc/3.3/email.html
+[11]: https://symfony.com/doc/3.3/logging.html
+[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+[14]: https://symfony.com/doc/current/setup/built_in_web_server.html
